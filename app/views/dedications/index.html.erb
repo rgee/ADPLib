@@ -1,0 +1,21 @@
+<h1>Listing dedications</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dedications.each do |dedication| %>
+  <tr>
+    <td><%= link_to 'Show', dedication %></td>
+    <td><%= link_to 'Edit', edit_dedication_path(dedication) %></td>
+    <td><%= link_to 'Destroy', dedication, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dedication', new_dedication_path %>

@@ -1,0 +1,17 @@
+API Planning Notes
+------------------
+
+Models:
+	*Book
+		-title : string
+		-Author : string
+		-Pub_date : date
+		-dedicated : boolean
+		-dedicated_by : string
+		-location : string
+		-checked_out : boolean
+		-description : string
+	*Checkout
+		(Book - User join model)
+	*Dedication
+		(Book - User join model)
